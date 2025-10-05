@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="asserts/ic_launcher-playstore.png">
+  <title>Word Fun Adventure Privacy Policy & Terms of Service</title>
+  <meta name="description"
+    content="Privacy Policy and Terms of Service for Word Fun Adventure by TM Softwares. Responsive, searchable, print-friendly." />
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0066ff;
+      --accent-2: #6b21a8;
+      --text: #0f172a;
+      --glass: rgba(255, 255, 255, 0.6);
+      --radius: 14px;
+      --max-width: 1100px;
+      --toc-width: 320px;
+      --gap: 20px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #eef2ff 1200px);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: clamp(14px, 1.4vw, 16px);
+  line-height: 1.65;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+
+    .shell {
+      width: 100%;
+      max-width: var(--max-width);
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: var(--gap);
+      align-items: start;
+    }
+
+    header.app-header {
+      grid-column: 1/-1;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+    }
+
+    .logoImg {
+      width: inherit;
+      height: inherit;
+    }
+
+    .title {
+      font-size: clamp(18px, 2.4vw, 24px);
+      font-weight: 700;
+      margin: 0
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .btn {
+      background: var(--card);
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      padding: 8px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600
+    }
+
+    .btn:active {
+      transform: translateY(1px)
+    }
+
+    main.card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+      overflow: hidden;
+    }
+
+    aside.toc {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+      border-radius: var(--radius);
+      padding: 18px;
+      height: fit-content;
+      position: sticky;
+      top: 24px;
+      box-shadow: 0 8px 30px rgba(16, 24, 40, 0.05);
+      border: 1px solid rgba(15, 23, 42, 0.04);
+      min-width: 220px;
+    }
+
+    nav.toc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 70vh;
+      overflow: auto;
+      padding-right: 6px
+    }
+
+    nav.toc-list a {
+      display: block;
+      padding: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600
+    }
+
+    nav.toc-list a small {
+      display: block;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 0.85rem
+    }
+
+    .search-wrap {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 12px
+    }
+
+    .search {
+      flex: 1;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      background: var(--glass)
+    }
+
+    article.content {
+      max-width: 100%;
+      overflow: auto
+    }
+
+    .content h2 {
+      font-size: 1.05rem;
+      margin: 18px 0 6px
+    }
+
+    .content h3 {
+      margin: 12px 0 6px;
+      font-size: 0.98rem
+    }
+
+    .content p {
+      margin: 8px 0;
+      color: #222
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .section-card {
+      padding: 14px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #fff, #fbfdff);
+      border: 1px solid rgba(15, 23, 42, 0.03);
+      margin-bottom: 12px
+    }
+
+    .controls {
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .small {
+      font-size: 0.9rem;
+      padding: 6px 8px
+    }
+
+    /* Collapsible summary */
+    .collapsible {
+      border-left: 3px solid rgba(0, 102, 255, 0.12);
+      padding-left: 12px
+    }
+
+
+.back-to-top{
+  position:fixed;
+  right:20px;
+  bottom:28px;
+  width:56px;
+  height:56px;
+  border-radius:16px;
+  border: none;
+  display:inline-grid;
+  place-items:center;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,250,255,0.9));
+  box-shadow: 0 8px 24px rgba(8,20,40,0.12);
+  cursor:pointer;
+  transform: translateY(18px) scale(.92);
+  opacity:0;
+  pointer-events:none;
+  transition:
+    transform 360ms cubic-bezier(.2,.9,.2,1),
+    opacity 240ms ease,
+    box-shadow 200ms ease;
+  z-index:1200; /* above header etc */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(15,23,42,0.06);
+  padding:0;
+}
+
+/* Visible state (added by JS) */
+.back-to-top.show{
+  transform: translateY(0) scale(1);
+  opacity:1;
+  pointer-events:auto;
+}
+
+/* Focus / hover polish */
+.back-to-top:focus{
+  outline: none;
+  box-shadow: 0 10px 30px rgba(6,78,255,0.12), 0 2px 6px rgba(2,6,23,0.08);
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* Icon inside */
+.back-to-top .btt-icon{
+  font-weight:700;
+  font-size:18px;
+  color: rgb(70, 64, 64);
+  position:relative;
+  transform: rotate(90deg); /* tilt it 90° */
+}
+
+/* Circular progress ring */
+.btt-ring{ width:48px; height:48px; position:absolute; inset:auto; pointer-events:none; }
+.btt-bg{ stroke: rgba(15,23,42,0.06); }
+.btt-progress{
+  stroke: var(--accent, #0066ff);
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+  stroke-dasharray: 126; /* 2πr ≈ 2π*20 */
+  stroke-dashoffset: 126;
+  transition: stroke-dashoffset 160ms linear;
+}
+
+    /* Print friendly */
+    @media print {
+      body {
+        background: white;
+        padding: 0
+      }
+
+      aside.toc,
+      .toolbar,
+      header.app-header {
+        display: none
+      }
+
+      .shell {
+        grid-template-columns: 1fr
+      }
+
+      main.card {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0
+      }
+    }
+
+    /* Responsive rules */
+    @media (max-width:1100px) {
+      .shell {
+        grid-template-columns: 1fr 320px
+      }
+    }
+
+    @media (max-width:880px) {
+      .shell {
+        grid-template-columns: 1fr
+      }
+
+      header.app-header {
+        order: -2
+      }
+
+      aside.toc {
+        position: relative;
+        order: -1;
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        /* ← add spacing below TOC */
+      }
+
+      main.card {
+        order: 0
+      }
+
+      nav.toc-list a {
+        padding: 1px;
+      }
+    }
+
+      /* Smaller screens: move to center bottom */
+@media (max-width:520px){
+  .back-to-top{ right: 50%; transform: translate(50%, 0) scale(1); bottom:18px; width:52px;height:52px; border-radius:12px; }
+}
+
+/* Hide when printing */
+@media print{
+  .back-to-top{ display:none !important; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .back-to-top, .btt-progress { transition: none !important; }
+}
+
+
+      /* Smallest screens - ensure legibility at 280px */
+      @media (max-width:360px) {
+        :root {
+          --radius: 10px
+        }
+
+        body {
+          padding: 12px
+        }
+
+        .logo {
+          width: 48px;
+          height: 48px;
+          font-size: 16px
+        }
+
+        .toc {
+          font-size: 0.95rem
+        }
+
+        .title {
+          font-size: 1.05rem
+        }
+
+        .btn {
+          padding: 7px 8px
+        }
+
+        .content h2 {
+          font-size: 1rem
+        }
+      }
+
+      /* Dark mode support */
+      :root.dark {
+        --bg: #071224;
+        --card: #071829;
+        --muted: #98a0ad;
+        --accent: #4f9cff;
+        --accent-2: #9b5cf3;
+        --text: #e6eef8;
+        --glass: rgba(255, 255, 255, 0.03);
+      }
+
+      /* Accessibility focus */
+      a:focus,
+      button:focus,
+      input:focus {
+        outline: 3px solid rgba(6, 78, 255, 0.15);
+        outline-offset: 2px
+      }
+
+      footer.note {
+        grid-column: 1/-1;
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin-top: 8px
+      }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo">
+          <img src="./asserts/ic_launcher-playstore.png" alt="logo" class="logoImg">
+        </div>
+        <div>
+          <h1 class="title">Word Fun Adventure Privacy & Terms</h1>
+          <div class="meta">TM Softwares • Effective: October 4, 2025</div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="search-wrap" style="display:none">
+          <input class="search" placeholder="Search policy..." id="searchTop" aria-label="Search policy" />
+        </div>
+        <div class="controls">
+          <button class="btn small" id="btnPrint" title="Print policy">Print</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="card" role="main">
+      <article class="content" id="content">
+        <!-- The policy content. Replace placeholders where needed. -->
+
+        <section class="section-card" id="part-a">
+          <h2>PART A PRIVACY POLICY</h2>
+
+          <section id="introduction" class="collapsible">
+            <h3>1. Introduction</h3>
+            <p>This Privacy Policy describes how TM Softwares and its affiliates ("we", "us", "our", "Company") collect,
+              use, disclose, and protect information when you download, install, access, or use the mobile game
+              <strong>Word Fun Adventure</strong> (the "Game"), and related services, websites, and features
+              (collectively the "Service"). By using the Service you accept the practices described in this policy.</p>
+            <p><strong>Controller / Contact:</strong><br>
+              TM Softwares<br>
+              Email: <a href="mailto:tmsoftwaresprivacy@outlook.com">tmsoftwaresprivacy@outlook.com</a><br>
+            </p>
+          </section>
+
+          <section id="scope" class="collapsible">
+            <h3>2. Scope and Applicability</h3>
+            <p>This Policy applies to information we collect:</p>
+            <ul>
+              <li>Directly from you (when you register, contact support, make purchases);</li>
+              <li>Automatically when you use the Game (gameplay, device identifiers, local storage); and</li>
+              <li>From third parties (payment processors, advertising partners, analytics providers).</li>
+            </ul>
+            <p>It does not apply to information collected by third-party websites, services, advertisers, or social
+              networks that you may access through the Game. We do not control those third parties' practices.</p>
+          </section>
+
+          <section id="info-we-collect" class="collapsible">
+            <h3>3. Information We Collect</h3>
+
+            <h4>A. Information You Provide Directly</h4>
+            <p>- <strong>Account / Profile:</strong> Player name, display name, email address (if provided), profile
+              settings.</p>
+            <p>- <strong>Communications:</strong> Customer support messages, feedback, contest entries.</p>
+            <p>- <strong>Purchases:</strong> Billing information transmitted to payment processors (we do not store full
+              card numbers unless you expressly opt in via a provider; payment processors store payment details).</p>
+
+            <h4>B. Information Collected Automatically</h4>
+            <p>- <strong>Device & Technical Data:</strong> Device type, operating system version, device identifiers
+              (including advertising identifier / device ad ID where available), model, screen resolution, language, IP
+              address, locale and timezone.</p>
+            <p>- <strong>Usage & Gameplay Data:</strong> Levels played, scores, achievements, coins, power-up usage,
+              session length, menu interactions, errors and crash logs, in-game purchases, leaderboard entries and
+              names.</p>
+            <p>- <strong>Local Storage:</strong> Data stored locally such as game progress, settings, local leaderboard,
+              coins, achievements, and cached assets.</p>
+            <p>- <strong>Diagnostics & Performance:</strong> Crash reports, performance logs, and telemetry required to
+              improve stability.</p>
+
+            <h4>C. Information From Third Parties</h4>
+            <p>- <strong>Advertising & Analytics Partners:</strong> Aggregated and pseudonymous analytics data and
+              advertising signals used for measurement, optimization, and to deliver ads.</p>
+            <p>- <strong>Platform Providers:</strong> Basic account/identity data if you sign in via platform services.
+            </p>
+          </section>
+
+          <section id="how-we-use" class="collapsible">
+            <h3>4. How We Use Information</h3>
+            <p>We use collected information to:</p>
+            <ul>
+              <li>Provide, operate, maintain, and improve the Game;</li>
+              <li>Process purchases, deliver virtual goods, and maintain account state;</li>
+              <li>Personalize content, gameplay, and user interface;</li>
+              <li>Provide support and respond to inquiries;</li>
+              <li>Measure and analyze usage, performance, and trends;</li>
+              <li>Detect and prevent fraud, abuse, and security incidents;</li>
+              <li>Serve advertisements and measure ad performance (where applicable);</li>
+              <li>Comply with legal obligations.</li>
+            </ul>
+          </section>
+
+          <section id="legal-basis" class="collapsible">
+            <h3>5. Legal Bases for Processing (if applicable)</h3>
+            <p>Where required (e.g., under GDPR), our lawful bases include:</p>
+            <ul>
+              <li><strong>Consent:</strong> for personalized advertising, analytics where required, and optional
+                features.</li>
+              <li><strong>Contract performance:</strong> to provide the Game and fulfill transactions.</li>
+              <li><strong>Legitimate interests:</strong> to improve and secure the Game, detect fraud, and manage our
+                business (balanced against users’ rights).</li>
+              <li><strong>Legal obligation:</strong> to comply with applicable laws and legal processes.</li>
+            </ul>
+          </section>
+
+          <section id="ads" class="collapsible">
+            <h3>6. Advertising, Profiling, and Third-Party Partners</h3>
+            <p>The Game may display ads provided by third-party advertising networks and mediation partners. These
+              partners may collect or receive information about your device and gameplay to personalize and measure ads.
+              We do not control their practices. To limit interest-based advertising, use your device settings to limit
+              ad tracking or reset your device ad identifier (search your device settings for “limit ad tracking” or
+              “reset advertising identifier”).</p>
+          </section>
+
+          <section id="analytics" class="collapsible">
+            <h3>7. Analytics, Crash Reporting, and Remote Config</h3>
+            <p>We may use third-party analytics and crash reporting services to monitor Game performance and usage.
+              These services may collect technical data and usage analytics. Data used for analytics is typically
+              aggregated or pseudonymized.</p>
+          </section>
+
+          <section id="iap" class="collapsible">
+            <h3>8. In-App Purchases, Virtual Currency, and Refunds</h3>
+            <p>- Purchases are processed by third-party payment providers. We transmit basic purchase information
+              (transaction ID, purchase item, date, purchaser identifier) to enable fulfillment.</p>
+            <p>- Virtual currency and items purchased in the Game have no cash value outside the Game and are generally
+              non-transferable and non-refundable except where required by law. See the Terms section for wallet/coins
+              behavior.</p>
+          </section>
+
+          <section id="retention" class="collapsible">
+            <h3>9. Data Retention</h3>
+            <p>We retain personal information as long as necessary to provide the Service, meet legal obligations,
+              resolve disputes, enforce our agreements, and for legitimate business purposes. For example:</p>
+            <ul>
+              <li>Account, purchase, and support data: retained for up to seven years (or as required by law).</li>
+              <li>Analytics and aggregated telemetry: retained in aggregated or pseudonymized form for ongoing product
+                improvement.</li>
+            </ul>
+            <p>If you request deletion of your account, we will remove or anonymize personal data subject to legal and
+              operational retention obligations (order processing, fraud prevention, regulatory compliance).</p>
+          </section>
+
+          <section id="children" class="collapsible">
+            <h3>10. Children</h3>
+            <p>The Game is not intended for children under 13 (or the minimum age in your jurisdiction). We do not
+              knowingly collect personal data from children under the applicable minimum age. If you believe we have
+              collected such data, contact us to request deletion. Parents or guardians may also contact us to remove
+              their child's information.</p>
+          </section>
+
+          <section id="rights" class="collapsible">
+            <h3>11. Your Rights and Choices</h3>
+            <p>Depending on applicable law, you may have rights to:</p>
+            <ul>
+              <li>Access the personal data we hold about you;</li>
+              <li>Rectify inaccurate or incomplete data;</li>
+              <li>Delete your personal data (subject to retention obligations);</li>
+              <li>Export your data in a commonly used format;</li>
+              <li>Restrict or object to processing (including for profiling/ads);</li>
+              <li>Withdraw consent where processing is based on consent.</li>
+            </ul>
+            <p>To exercise rights, contact <a
+                href="mailto:tmsoftwaresprivacy@outlook.com">tmsoftwaresprivacy@outlook.com</a> and include enough
+              information to verify your identity. We will respond within the time frame required by law.</p>
+            <p><strong>California Residents:</strong> If you are a California resident, you may have additional rights
+              under the California Consumer Privacy Act (CCPA). Submit requests to opt-out of sale/sharing of personal
+              information or to exercise your CCPA rights to <a
+                href="mailto:tmsoftwaresprivacy@outlook.com">tmsoftwaresprivacy@outlook.com</a>. We do not “sell”
+              personal information for cash; however, certain sharing with ad partners may fall under California
+              definitions — contact us to opt-out.</p>
+          </section>
+
+          <section id="security" class="collapsible">
+            <h3>12. Security</h3>
+            <p>We implement reasonable administrative, technical, and physical safeguards to protect personal
+              information. No system is impenetrable; we cannot guarantee absolute security. In the event of a data
+              breach, we will follow legal notification requirements.</p>
+          </section>
+
+          <section id="international" class="collapsible">
+            <h3>13. International Transfers</h3>
+            <p>Data may be processed and stored in countries other than your own. When transferring data
+              internationally, we apply safeguards required by law.</p>
+          </section>
+
+          <section id="changes-policy" class="collapsible">
+            <h3>14. Changes to This Policy</h3>
+            <p>We may update this Policy to reflect operational or legal changes. The "Effective date" at the top
+              indicates the current version. If changes are material, we will provide prominent notice.</p>
+          </section>
+
+          <section id="contact" class="collapsible">
+            <h3>15. Contact and Complaints</h3>
+            <p>For privacy questions, requests, or complaints: <a
+                href="mailto:tmsoftwaresprivacy@outlook.com">tmsoftwaresprivacy@outlook.com</a>. You may also contact
+              the relevant data protection authority in your jurisdiction.</p>
+          </section>
+        </section>
+
+        <section class="section-card" id="part-b">
+          <h2>PART B TERMS OF SERVICE (TERMS &amp; CONDITIONS)</h2>
+
+          <section id="acceptance" class="collapsible">
+            <h3>1. Acceptance of Terms</h3>
+            <p>These Terms govern your access to and use of Word Fun Adventure. By downloading, installing, accessing,
+              or using the Game, you agree to be bound by these Terms and our Privacy Policy.</p>
+            <p>If you do not agree, do not use the Game.</p>
+          </section>
+
+          <section id="eligibility" class="collapsible">
+            <h3>2. Eligibility</h3>
+            <p>You must be of the minimum legal age in your country to form a binding contract with us. If you are under
+              the applicable age, you must obtain parental or guardian consent and they must agree to these Terms.</p>
+          </section>
+
+          <section id="license" class="collapsible">
+            <h3>3. License Grant</h3>
+            <p>Subject to these Terms, TM Softwares grants you a limited, non-exclusive, non-transferable, revocable
+              license to download, install, and use the Game for personal, non-commercial entertainment on compatible
+              devices.</p>
+            <p>All rights not expressly granted are reserved.</p>
+          </section>
+
+          <section id="accounts" class="collapsible">
+            <h3>4. User Accounts &amp; Leaderboards</h3>
+            <p>- You may be able to create or use a local profile or link platform-level accounts. You are responsible
+              for keeping credentials secure.</p>
+            <p>- Leaderboards may display the name you provide. Do not post personally sensitive information in
+              usernames or public fields.</p>
+            <p>- TM Softwares may remove, edit, or refuse content that violates these Terms.</p>
+          </section>
+
+          <section id="virtualcurrency" class="collapsible">
+            <h3>5. Virtual Currency, In-App Purchases, and Refunds</h3>
+            <p>- Purchases are processed by third-party payment providers. When you purchase virtual currency, that
+              currency is immediately available in the Game.</p>
+            <p>- Virtual currency and digital goods have no cash value outside the Game unless otherwise stated.</p>
+            <p>- Purchases are generally non-refundable except as required by applicable law or the payment provider's
+              refund policies. Contact support for purchase issues.</p>
+            <p>- We may implement expiration, revocation, or conversion mechanics for in-game currency; changes will be
+              published in patch notes or updates.</p>
+          </section>
+
+          <section id="prohibited" class="collapsible">
+            <h3>6. Prohibited Conduct</h3>
+            <p>You agree not to:</p>
+            <ul>
+              <li>Use cheats, bots, hacks, or other unauthorized third-party software to modify gameplay;</li>
+              <li>Interfere with servers, other users' experience, or the integrity of the Game;</li>
+              <li>Submit abusive, unlawful, or infringing user content;</li>
+              <li>Attempt to extract or decompile the Game source code;</li>
+              <li>Misrepresent your identity or attempt to impersonate others.</li>
+            </ul>
+            <p>Violation may result in account suspension, termination, or legal action.</p>
+          </section>
+
+          <section id="ugc" class="collapsible">
+            <h3>7. User-Generated Content</h3>
+            <p>If the Game allows chat, messages, or user content:</p>
+            <p>- You retain ownership of your content, but grant TM Softwares a worldwide, royalty-free, sublicensable,
+              transferable license to host, distribute, reproduce, modify, and display that content for the purpose of
+              operating and promoting the Game.</p>
+            <p>- We reserve the right to remove content that violates these Terms or applicable law.</p>
+          </section>
+
+          <section id="ip" class="collapsible">
+            <h3>8. Intellectual Property</h3>
+            <p>All Game assets code, art, UI, music, logos, and trademarks—are the property of TM Softwares or its
+              licensors. You must not copy, redistribute, or create derivative works without express written permission.
+            </p>
+          </section>
+
+          <section id="updates" class="collapsible">
+            <h3>9. Updates and Termination</h3>
+            <p>TM Softwares may update, modify, or discontinue the Game or any component, temporarily or permanently,
+              with or without notice. We may terminate or suspend access for violations, inactivity, or technical
+              reasons.</p>
+          </section>
+
+          <section id="disclaimers" class="collapsible">
+            <h3>10. Disclaimers</h3>
+            <p>THE GAME IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. TO
+              THE MAXIMUM EXTENT PERMITTED BY LAW, TM SOFTWARES DISCLAIMS IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS
+              FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+            <p>We do not guarantee uninterrupted or error-free operation.</p>
+          </section>
+
+          <section id="liability" class="collapsible">
+            <h3>11. Limitation of Liability</h3>
+            <p>TO THE EXTENT PERMITTED BY LAW, TM SOFTWARES' AGGREGATE LIABILITY FOR ANY CLAIM ARISING FROM OR RELATED
+              TO THE GAME IS LIMITED TO THE AMOUNT YOU PAID (IF ANY) TO TM SOFTWARES IN THE LAST 12 MONTHS OR ONE
+              HUNDRED (100) [LOCAL CURRENCY] — WHICHEVER IS LESS. WE ARE NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL,
+              OR CONSEQUENTIAL DAMAGES.</p>
+          </section>
+
+          <section id="indemnity" class="collapsible">
+            <h3>12. Indemnity</h3>
+            <p>You agree to indemnify, defend, and hold TM Softwares harmless from and against any claims, liabilities,
+              losses, damages, and expenses arising from your violation of these Terms or your use of the Game.</p>
+          </section>
+
+          <section id="governing" class="collapsible">
+            <h3>13. Governing Law and Dispute Resolution</h3>
+            <p>These Terms are governed by the laws of the <strong>Republic of South Africa</strong> (please change if
+              another jurisdiction applies). Any dispute arising under these Terms will be subject to the exclusive
+              jurisdiction of the courts located in South Africa, unless otherwise required by applicable law.</p>
+          </section>
+
+          <section id="changes-terms" class="collapsible">
+            <h3>14. Changes to Terms</h3>
+            <p>We may revise these Terms. If changes are material, we will notify you via the Game or other reasonable
+              means. Continued use after notice constitutes acceptance.</p>
+          </section>
+
+          <section id="thirdparty" class="collapsible">
+            <h3>15. Third-Party Services</h3>
+            <p>The Game may embed or integrate with third-party services (ads, analytics, payment processors). Your use
+              of such services is subject to the third party's terms and policies. We are not responsible for
+              third-party practices or content.</p>
+          </section>
+
+          <section id="export" class="collapsible">
+            <h3>16. Export Controls and Sanctions</h3>
+            <p>You represent that you are not located in a country or on a sanctions list that prohibits you from
+              receiving the Game. You agree to comply with any export control laws or regulations applicable to your
+              use.</p>
+          </section>
+
+          <section id="misc" class="collapsible">
+            <h3>17. Miscellaneous</h3>
+            <p>- <strong>Severability:</strong> If any provision of these Terms is determined invalid, the remainder
+              will continue in effect.</p>
+            <p>- <strong>Assignment:</strong> TM Softwares may assign its rights to third parties. You may not assign
+              your rights without our written consent.</p>
+            <p>- <strong>Entire Agreement:</strong> These Terms and the Privacy Policy constitute the entire agreement
+              between you and TM Softwares regarding the Game.</p>
+          </section>
+        </section>
+
+        <section class="section-card" id="part-c">
+          <h2>PART C IMPLEMENTATION CHECKLIST (developer notes)</h2>
+          <ol>
+            <li>Replace placeholder contact email(s) and physical address.</li>
+            <li>Add a "Privacy Policy" and "Terms" link inside the app settings/about and on your public website.</li>
+            <li>Host this document at a stable public URL and add that URL to your app store listing(s).</li>
+            <li>If you integrate third-party analytics, ads, or payment processors, add explicit vendor names and links
+              to their privacy policies in an appendix or a vendor list.</li>
+            <li>Implement an in-app settings screen with: an option to view this policy, a way to contact support, and
+              clear opt-outs for personalized ads if your ad stack supports it.</li>
+            <li>Keep change history and effective dates. Update the "Effective date" when you change wording.</li>
+          </ol>
+        </section>
+
+        <section class="section-card" id="part-d">
+          <h2>PART D FINAL NOTES</h2>
+          <p>This document is a comprehensive starting point long and broad by design. It intentionally avoids naming
+            specific third-party vendors; you must add vendor names and specific operational details (list of
+            analytics/ad providers, payment processors, and exact retention periods) before publishing. For full legal
+            compliance in specific jurisdictions (GDPR, UK GDPR, CCPA/CPRA, POPIA, etc.), consult a qualified attorney.
+          </p>
+
+          <p><strong>Contact for privacy requests:</strong> <a
+              href="mailto:tmsoftwaresprivacy@outlook.com">tmsoftwaresprivacy@outlook.com</a> (replace before
+            publishing).</p>
+        </section>
+
+      </article>
+    </main>
+
+    <aside class="toc" aria-label="Table of contents">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <strong>Contents</strong>
+        <div style="display:flex;gap:8px;align-items:center">
+          <input id="tocSearch" class="search" placeholder="Search..." aria-label="Search document"
+            style="width:160px" />
+        </div>
+      </div>
+      <nav class="toc-list" id="tocList" role="navigation" aria-label="Document table of contents">
+        <!-- TOC populated by JS -->
+      </nav>
+      <div style="margin-top:12px;color:var(--muted);font-size:0.95rem"></div>
+    </aside>
+
+    <footer class="note" style="text-align: center;">Hosted copy generated by TM Softwares.</footer>
+  </div>
+  
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg class="btt-ring" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+      <circle class="btt-bg" cx="24" cy="24" r="20" stroke-width="4" fill="none"></circle>
+      <circle class="btt-progress" cx="24" cy="24" r="20" stroke-width="4" fill="none" stroke-linecap="round"></circle>
+    </svg>
+    <span class="btt-icon" aria-hidden="true"> < </span>
+  </button>
+
+  <script>
+    // Build TOC from h2 and h3 headings
+    (function () {
+      const toc = document.getElementById('tocList');
+      const content = document.getElementById('content');
+      const headings = content.querySelectorAll('h2, h3');
+      headings.forEach(h => {
+        const id = h.parentElement.id || h.id || h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        if (!h.parentElement.id) h.parentElement.id = id;
+        const a = document.createElement('a');
+        a.href = '#' + id;
+        a.innerHTML = h.textContent;
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.replaceState(null, '', '#' + id);
+        });
+        a.setAttribute('data-target', id);
+        toc.appendChild(a);
+      });
+    })();
+
+    // Search / filter
+    (function () {
+      const tocSearch = document.getElementById('tocSearch');
+      const searchTop = document.getElementById('searchTop');
+      const sections = Array.from(document.querySelectorAll('.section-card, .collapsible'));
+
+      function doFilter(q) {
+        const ql = q.trim().toLowerCase();
+        sections.forEach(s => {
+          const text = s.textContent.toLowerCase();
+          if (!ql || text.includes(ql)) {
+            s.style.display = '';
+          } else {
+            s.style.display = 'none';
+          }
+        });
+      }
+
+      tocSearch.addEventListener('input', e => doFilter(e.target.value));
+      if (searchTop) searchTop.addEventListener('input', e => doFilter(e.target.value));
+    })();
+
+    // Print
+    document.getElementById('btnPrint').addEventListener('click', () => window.print());
+
+    // Deep link copy on heading click (support keyboard)
+    (function () {
+      document.querySelectorAll('article.content h2, article.content h3').forEach(h => {
+        h.style.cursor = 'pointer';
+        h.title = 'Click to copy link to this section';
+        h.addEventListener('click', () => {
+          const id = h.parentElement.id || h.id;
+          const url = location.origin + location.pathname + '#' + id;
+          navigator.clipboard && navigator.clipboard.writeText(url).then(() => {
+            const prev = h.innerHTML;
+            h.innerHTML = prev + ' — link copied';
+            setTimeout(() => h.innerHTML = prev, 1200);
+          }).catch(() => {
+            // fallback
+            alert('Copy this link: ' + url);
+          });
+        });
+      });
+    })();
+
+    // Ensure page opens scrolled to anchor
+    (function () {
+      if (location.hash) {
+        const id = location.hash.slice(1);
+        const el = document.getElementById(id);
+        if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 300);
+      }
+    })();
+
+    (function(){
+  const btn = document.getElementById('backToTop');
+  const progress = btn.querySelector('.btt-progress');
+  const SHOW_AFTER = 260; // px scrolled before showing
+  const doc = document.documentElement;
+  const body = document.body;
+  const maxOffset = () => Math.max(doc.scrollHeight, body.scrollHeight) - window.innerHeight;
+
+  // calculate circumference (r=20 from CSS)
+  const R = 20;
+  const C = 2 * Math.PI * R;
+  progress.style.strokeDasharray = C;
+  progress.style.strokeDashoffset = C;
+
+  let ticking = false;
+
+  function update(){
+    const scroll = window.scrollY || window.pageYOffset;
+    const total = maxOffset();
+    const pct = total > 0 ? Math.min(1, scroll / total) : 0;
+    const offset = Math.round(C * (1 - pct));
+    progress.style.strokeDashoffset = offset;
+
+    if(scroll > SHOW_AFTER){
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', ()=> {
+    if(!ticking){
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, {passive:true});
+
+  // click or keyboard activation
+  function scrollToTop(){
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      window.scrollTo(0,0);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  btn.addEventListener('click', scrollToTop);
+  btn.addEventListener('keydown', (e)=>{
+    if(e.key === 'Enter' || e.key === ' '){
+      e.preventDefault();
+      scrollToTop();
+    }
+  });
+
+  // initialize on load
+  document.addEventListener('DOMContentLoaded', update);
+  // also update on resize (document height changes)
+  window.addEventListener('resize', update);
+})();
+  </script>
+</body>
+
+</html>
